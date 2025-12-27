@@ -7,13 +7,28 @@ body {
 /* CSS rule to style the header tag: background color */
 header {
     background-color: #A9D0F5; /* Light blue color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* CSS rule to style the nav tag: background color */
 nav {
-    background-color: #4A90E2; /* A medium blue color */
+   background-color: #4A90E2;
+    display: inline-block;
+    width: 80%;/* A medium blue color */
+}
+nav img {
+    width: 10%;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-between;
+    align-items: start;
+    row-gap: 20px;
+}
 /* CSS rule to style the main tag: background color and font size */
 main {
     background-color: #F8F8F8; /* Very light gray */
@@ -29,12 +44,13 @@ footer {
 }
 
 /* CSS rule to style the li tag: display and width */
+/*
 nav ul li {
-    display: inline; /* Makes the list items appear side-by-side */
-    width: 30%; /* Set a width for list items (may need adjustment based on final layout) */
-    margin-right: 20px; /* Add some space between items */
+    display: inline; 
+    width: 30%; 
+    margin-right: 20px; 
 }
-
+*/
 /* CSS rule to style the h1 tag: text alignment, font family, and color */
 h1 {
     text-align: center;
@@ -51,9 +67,8 @@ p {
 /* Optional: Adding some basic styling for the navigation links and the image in the header */
 nav ul {
     list-style-type: none; /* Removes bullet points */
-    padding: 0;
-    margin: 0;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li a {
@@ -66,4 +81,12 @@ nav ul li a {
 header img {
     display: block; /* Makes the image take up its own line */
     margin: 0 auto; /* Centers the image */
+}
+.grid img {
+    width: 100%;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
